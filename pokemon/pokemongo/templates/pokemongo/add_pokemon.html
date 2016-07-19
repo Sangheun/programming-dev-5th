@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Pokemon</title>
+</head>
+<body>
+    <h1>Add Pokemon</h1>
+    <form method="post" action="">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit">Add</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Trainer</title>
+</head>
+<body>
+    <h1>Add Trainer</h1>
+    <form method="post" action="">
+    {% csrf_token %}
+    <table>
+    {{form.as_table}}
+    </table>
+    <button type="submit">Add</button>
+    </form>
+</body>
+</html>

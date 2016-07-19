@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pokemon list</title>
+</head>
+<body>
+    <h1>Pokemon</h1>
+    {% for pokemon in pokemons %}
+    <p>{{pokemon.name}}</p>
+    {% endfor %}
+
+    <a href="{% url 'pokemongo:add_pokemon' %}"><button>포켓몬 추가하기</button></a>
+
+    <h1>Trainer</h1>
+    {% for trainer in trainers %}
+    <p>{{trainer.name}}</p>
+    {% endfor %}
+
+    <a href="{% url 'pokemongo:add_trainer' %}"><button>트레이너 추가하기</button></a>
+</body>
+</html>

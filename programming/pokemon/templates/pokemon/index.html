@@ -1,0 +1,24 @@
+    <h1>포켓몬 리스트</h1>
+    <ul>
+        {% for pokemon in pokemon %}
+            <p>{{pokemon.name }}</p>
+        {% endfor %}
+    </ul>
+
+
+
+    <h1>트레이너 리스트</h1>
+    <ul>
+        {% for person in person %}
+            <p>{{ person.name }}</p>
+        {% endfor %}
+    </ul>
+
+
+
+    <h1>잡은 장소</h1>
+    <ul>
+        {% for place in place %}
+            <p>{{ place.place }}</p>
+        {% endfor %}
+    </ul>
