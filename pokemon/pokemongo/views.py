@@ -12,6 +12,9 @@ def pokemon_list(request):
         'trainers':trainers,
         })
 
+#뷰 이름은 모델명(소문자)_list 이렇게 작성. 약속.
+
+
 def add_pokemon(request):
     if request.method == "POST":
         form = PokemonForm(request.POST)

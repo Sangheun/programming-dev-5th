@@ -1,0 +1,14 @@
+<h1>{{post.title}}<small>  {{post.created_at}}</small></h1>
+<hr />
+{{post.content}}
+<br/>
+
+<h3>댓글</h3>
+{% for comment in post.comment_set.all %}
+
+{{comment.message}} by {{comment.author}} <br />
+
+<a href="{% url 'blog:comment_edit' post.id comment.id %}">수정</a>
+{% endfor %}
+
+<a href="{% url 'blog:comment_new' post.id %}">댓글 쓰기</a>
